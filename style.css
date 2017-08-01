@@ -1,0 +1,51 @@
+body{
+  background-color:#3F5765;
+  font-family: 'Roboto Slab', serif;
+  color: #EFEFEF;
+}
+.lower{
+  margin-top: 7rem;
+}
+.subtext{
+  margin: 100px 0 7px 0;
+}
+hr{
+  border-top-color:#EFEFEF;
+}
+.my-link:hover{
+  background-color: #3F5765;
+  border-color: #3F5765;
+  transition: 0.3s;
+}
+.title{
+  margin-top: 10px;
+}
+a{
+  color: inherit;
+  text-decoration: underline;
+}
+a:hover{
+  color:inherit;
+}
+.codepen{
+  margin-bottom: 4rem;
+}
+.space{
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+.no-copy{
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor:default;
+}
+
+.all-copy{  
+  -webkit-user-select: all;
+  -moz-user-select: all;
+  -ms-user-select: all;
+  user-select: all;
+  cursor:text;
+}
