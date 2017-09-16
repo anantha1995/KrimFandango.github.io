@@ -49,3 +49,9 @@ a:hover{
   user-select: all;
   cursor:text;
 }
+
+@media only screen and (max-width: 650px) {
+    body {
+        font-size: 70%;
+    }
+}
