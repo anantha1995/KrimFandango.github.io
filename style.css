@@ -1,60 +1,107 @@
+*{
+    box-sizing: border-box;
+    text-align: center;
+}
 body{
-  background-color:#3F5765;
-  font-family: 'Roboto Slab', serif;
-  color: #EFEFEF;
+    transition: 1s;
+    margin:0;
+    background-color:#2D192B;
+    color:#93F8F4;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
-.lower{
-  margin-top: 7rem;
+.table{
+    display: table;
+    width:100vw;
+    height: 100vh;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
-.subtext{
-  margin: 100px 0 7px 0;
+.cell{
+    display: table-cell;
+    vertical-align: middle;
 }
-hr{
-  border-top-color:#EFEFEF;
+.container{
+    max-width: 1000px;
+    font-size: 0;
+    margin: 0 auto;
 }
-.my-link:hover{
-  background-color: #3F5765;
-  border-color: #3F5765;
-  transition: 0.3s;
-}
-.title{
-  margin-top: 10px;
+.getColor{
+    font-size: 12px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
+    display:inline-block;
+    padding: 8px 10px;
+    position: fixed;
+    top: 10px;
+    right:0;
 }
 a{
-  color: inherit;
-  text-decoration: underline;
+    color: inherit;
+    text-decoration: inherit;
+    border-bottom:2px dashed rgba(255, 255, 255, 0.5);
+    padding-bottom:2px;
 }
-a:hover{
-  color:inherit;
+h1{
+    font-size:32px;
+    font-family: 'Roboto Slab', serif;
 }
-.codepen{
-  margin-bottom: 4rem;
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 32px;
+    padding-top: 30px;
 }
-.space{
-  line-height: 1.5;
-  white-space: pre-wrap;
+p{
+    font-size:21px;
+    line-height: 35px;;
 }
-.no-copy{
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  cursor:default;
+.main{
+    max-width: 1000px;
+    margin:0 auto;
 }
-
-.all-copy{  
-  -webkit-user-select: all;
-  -moz-user-select: all;
-  -ms-user-select: all;
-  user-select: all;
-  cursor:text;
+ul{
+    margin:0;
+    padding:0;
 }
-
-@media only screen and (max-width: 650px) {
-    h3 {
-        font-size: 20px !important;
-    }
-  h1{
-    font-size: 32px !important;
-  }
+li{
+    padding: 5px 10px;
+    margin:5px;
+    display: inline-block;
+    background-color:#93F8F4;
+    color:#2D192B;
+    border-radius:3px;
+    font-family: 'Roboto Slab', serif;
+    font-size:12px;
+    user-select: none;
+}
+.showcase{
+    border:5px solid #93F8F4;
+    height: 300px;
+    width:500px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin:0 auto;
+}
+.upwork{
+    height:768px;width:484px;
+}
+.examples div{
+    width:50%;
+    display: inline-block;
+    font-size:21px;
+    line-height: 35px;
+    padding:10px;
+}
+.examples div div{
+    display:block;
+    height: 300px;
+    width:450px;
+    margin:10px auto;
+}
+.examples{
+    font-size:0;
 }

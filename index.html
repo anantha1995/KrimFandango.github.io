@@ -1,78 +1,99 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Kareem Kamal's Portfolio</title>
-  <meta name="Description" content="My personal portfolio page">
-  <meta name="Keywords" content="webdev web design programming kareem kamal krimfandango egypt alexandria">
-  <META NAME="Language" CONTENT="English">
-  <META NAME="distribution" CONTENT="Global">
-  <META NAME="Robots" CONTENT="INDEX,FOLLOW">
-  <META NAME="country" CONTENT="Egypt">
-  <meta property="og:url"              content="KrimFandango.github.io" />
-  <meta property="og:title"              content="Kareem Kamal's Portfolio" />
-  <meta property="og:description"        content="Frontend web designer/developer from Egypt" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kareem Kamal's Portfolio</title>
+    <meta name="Description" content="My personal portfolio page">
+    <meta name="Keywords" content="webdev web design programming kareem kamal krimfandango egypt alexandria">
+    <META NAME="Language" CONTENT="English">
+    <META NAME="distribution" CONTENT="Global">
+    <META NAME="Robots" CONTENT="INDEX,FOLLOW">
+    <META NAME="country" CONTENT="Egypt">
+    <meta property="og:url"              content="KrimFandango.github.io" />
+    <meta property="og:title"              content="Kareem Kamal's Portfolio" />
+    <meta property="og:description"        content="Frontend web designer/developer from Egypt" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300|Roboto+Slab" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110924897-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-<link rel="stylesheet" href="style.css">
+    gtag('config', 'UA-110924897-1');
+    </script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+        <div class="table">
+            <div class="cell">
+                <div class="container">
+                    <h1>Hi, I'm Kareem, a Web Developer</h1>
+                    <div class="getColor" onclick="bgcolor('random','hex')">Random Colors</div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+        <div class="about">
+            <h2>About Me</h2>
+            <p>I graduated from Abu Keer higher institute for computer and information systems in 2013, majored in management information systems, I had the certificate but I had no real skill to go along with it, therefore I started my journey working in call centers, 4 years later, married and almost a dad, I took a leap of faith and quit call centers for good, and decided to pursue my passion for coding, applied for <a href="https://en.wikipedia.org/wiki/Information_Technology_Institute" target="_blank">ITI</a> and joined the UI design track.</p>
+            <p>And as an alternative to a fulltimejob, I became a freelancer on <a href="https://www.upwork.com/freelancers/~012cf4e300391e2648" target="_blank"> Upwork</a>.</p>
+        </div>
 
-  ga('create', 'UA-105157834-1', 'auto');
-  ga('send', 'pageview');
+        <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+            </ul>
+            <ul>
+                <li>jQuery</li>
+                <li>Bootstrap</li>
+                <li>AJAX</li>
+            </ul>
+            <ul>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+            </ul>
+        </div>
 
-</script>
-  <div class="container text-center no-copy">
-<div class="row lower">
-<div class="col">
-<h1><i class="fa fa-terminal" aria-hidden="true"></i> Hi, I'm Kareem, a web developer</h1>
+        <div class="examples">
+            <h2>Examples</h2>
+            <div>
+                <a href="http://itibook.com/color/" target="_blank">Color Selector
+               <div style="background-image:url('1.JPG')" class="showcase"></div></a>
+            </div>
+            <div>
+                <a href="https://codepen.io/Krimlen/full/xLwvVj/" target="_blank">Weather Machine
+                <div style="background-image:url('2.JPG')" class="showcase"></div></a>
+            </div>
+            <div>
+                <a href="https://codepen.io/Krimlen/full/EvPobE/" target="_blank">Wikipedia Viewer
+                <div style="background-image:url('4.JPG')" class="showcase"></div></a>  
+            </div>
+            <div>
+                <a href="http://setch.me" target="_blank">Setch.me (my first web project)
+                <div style="background-image:url('3.JPG')" class="showcase"></div></a>
+            </div>
+        </div>
 
-<h2 class="subtext">My Work</h2>
-<hr>
-</div>
-</div>
-<div class="row">
-<div class="col-12 col-md-6">
-<h1 class="title">Setch.me</h1>
-<small>made using PHP, MySQL, Javascript, AJAX, jQuery and Bootstrap</small>
-<a href="http://setch.me" target="_blank" ><img  src="http://setch.me/setch.JPG" alt="setch.me" class="img-thumbnail my-link"></a></div>
-<div class="col-12 col-md-6">
-<h1 class="title">Wikipedia Viewer</h1>
-<small>made using Javascript, AJAX, jQuery and bootstrap</small>
-<a href="https://codepen.io/Krimlen/full/EvPobE/" target="_blank" ><img  src="http://setch.me/wikipedia.JPG" alt="WikiViewer" class="img-thumbnail my-link"></a>
-</div>
-</div>
-<div class="row">
-<div class="col">
-  <h3 class="title">and more stuff on my codepen profile</h3>
-  <a href="https://codepen.io/Krimlen/" target="_blank"><img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-White-Large.png" height="75" width="75" alt="my codepen" class="codepen"></a>
-</div>
-</div>
+        <div class="textimonial">
+            <h2><a href="https://www.upwork.com/freelancers/~012cf4e300391e2648" target="_blank">Upwork</a> Clients Feedback</h2>
+            <p>more examples and reviews on my <a href="https://www.upwork.com/freelancers/~012cf4e300391e2648" target="_blank"> Upwork</a> profile</p>
 
-<div class="row">
-  <div class="col">
-    <h1 class="title">About Me</h1>
-<hr><br><h3 class="text-left space"><p><i class="fa fa-map-marker fa-1x" aria-hidden="true"></i>    From Alexandria, Egypt</p><p><i class="fa fa-graduation-cap" aria-hidden="true"></i> Bachelor of Information Systems</p><p><i class="fa fa-etsy" aria-hidden="true"></i>   Fluent English speaker</p><p><i class="fa fa-paint-brush" aria-hidden="true"></i>  Very good at Photoshop, and I can also draw with pencils, check out my <a href="http://specialflavour.deviantart.com" target="_blank">deviantART</a></p><p><i class="fa fa-circle-o" aria-hidden="true"></i>   Minimalist, less is more</p><p><i class="fa fa-code" aria-hidden="true"></i>  Currently focusing on getting better with JS, solving algorithms on <a href="https://www.freecodecamp.org/krimfandango" target="_blank">freeCodeCamp</a></h3>
-  </div>
-  </div>
-  <div class="row">
-  <div class="col">
-    <h1 class="title">Contact</h1>
-<hr><br>
-    <p>You can find me on <a href="https://www.linkedin.com/in/kareemkmetwally/" target="_blank">LinkedIn</a>, call me on <span class="all-copy">+20 12 7886 1411</span> or email me at <span class="all-copy">kareemkamal91@gmail.com</span></p>
-    </div></div>
-</div>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+            <div style="background-image:url('5.JPG')" class="showcase upwork" ></div>
+        </div>
+        </div>
 
-
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <p>You can find me on <a href="https://www.linkedin.com/in/kareemkmetwally/" target="_blank">LinkedIn</a>, or email me at kareemkamal91@gmail.com</p>
+        </div>        
+    <script src="script.js"></script>
 </body>
 </html>
