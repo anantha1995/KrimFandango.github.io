@@ -39,6 +39,13 @@ body{
     top: 10px;
     right:0;
 }
+back{
+    margin:0 3px;
+    padding: 5px 6px;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    text-align: center;
+}
 a{
     color: inherit;
     text-decoration: inherit;
@@ -104,4 +111,20 @@ li{
 }
 .examples{
     font-size:0;
+}
+
+@media only screen and (max-width: 500px) {
+    .examples div{
+        width: 100vw;
+    }
+    .examples div div{
+        display:block;
+        height: 50vh;
+        width:90vw;
+    }
+    
+.upwork{
+    
+    height: 80vh;width:90vw;
+}
 }
