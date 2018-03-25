@@ -45,9 +45,10 @@ header {
     flex-direction: row-reverse;
     padding: 40px 20px; }
     header nav ul {
-      font-size: 18px; }
+      font-size: 18px;
+      display: flex; }
       header nav ul li {
-        padding: 4px 7px 7px 7px;
+        padding: 4px 15px 7px 15px;
         border-radius: 3px; }
         header nav ul li a {
           border-bottom: 2px solid #333;
@@ -168,10 +169,10 @@ header {
       flex-basis: 10%;
       transition: 0.5s; }
     .blog .main-text section > div {
-      flex-basis: 70%;
+      flex-basis: 80%;
       padding: 5px 20px;
       text-align: right;
-      font-family: 'DroidArabicKufiRegular'; }
+      font-family: 'DroidArabicKufiRegular','Arial'; }
       .blog .main-text section > div .author {
         font-size: 12px;
         color: #aaa; }
@@ -180,7 +181,7 @@ body.blog-post h1 {
   font-size: 32px; }
 
 body.blog-post .main-text {
-  font-family: 'DroidArabicKufiRegular'; }
+  font-family: 'DroidArabicKufiRegular','Arial'; }
   body.blog-post .main-text .author {
     font-size: 12px;
     color: #aaa; }
