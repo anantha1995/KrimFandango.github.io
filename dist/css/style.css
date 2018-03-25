@@ -57,105 +57,124 @@ header {
             padding-bottom: 8px; }
           header nav ul li a:active {
             padding-bottom: 3px; }
-  header .main-text {
-    width: 700px;
-    max-width: 100vw;
-    margin: 0 auto 45px auto; }
-    header .main-text a {
-      border-bottom: 1px dashed #333; }
-    header .main-text .img {
-      width: 150px;
-      height: 150px;
-      background-image: url("../img/me.jpg");
-      background-size: cover;
-      border-radius: 50%;
-      background-position: center;
-      margin: 0 auto; }
-    header .main-text h1 {
-      font-weight: 600;
-      font-size: 50px;
-      margin: 5px 0; }
-    header .main-text h3 {
-      font-weight: 400;
-      margin: 5px 0;
-      color: #777; }
-    header .main-text h4 {
-      margin: 5px 0;
-      font-size: 18px; }
-    header .main-text .spacer {
-      margin: 20px auto;
-      width: 80%;
-      height: 1px;
-      background-color: #ccc; }
-    header .main-text section {
-      display: flex; }
-      header .main-text section figure {
-        flex-basis: 20%; }
-        @media (max-width: 768px) {
-          header .main-text section figure {
-            margin: 20px; } }
-        header .main-text section figure svg {
-          max-width: 100%;
-          height: auto; }
-          header .main-text section figure svg path {
-            fill: #333; }
-      header .main-text section > div {
-        flex-basis: 80%;
-        text-align: left; }
-        header .main-text section > div .skill-list {
-          display: grid;
-          grid-template-columns: 1fr 1fr; }
-          header .main-text section > div .skill-list p {
-            position: relative; }
-            header .main-text section > div .skill-list p .skill {
-              width: 50px;
-              height: 12px;
-              border-radius: 7.5px;
-              background-color: #ccc;
-              display: inline-block;
-              vertical-align: middle;
-              overflow: hidden;
-              position: absolute;
-              right: 15%;
-              top: 50%;
-              transform: translateY(-50%); }
-              @media (max-width: 768px) {
-                header .main-text section > div .skill-list p .skill {
-                  right: 8%;
-                  width: 35px;
-                  height: 12px;
-                  border-radius: 6px; } }
-              header .main-text section > div .skill-list p .skill span {
-                background: #333;
-                height: 100%;
-                display: inline-block;
-                vertical-align: top;
-                color: snow;
-                text-align: center;
-                font-size: 10px;
-                line-height: 12px; }
-        header .main-text section > div li {
-          padding: 3px 0; }
 
-.blog .main-text section {
-  direction: rtl;
-  justify-content: center; }
-  .blog .main-text section figure {
-    font-family: fantasy;
+/**** body ****/
+.main-text {
+  width: 700px;
+  max-width: 100vw;
+  margin: 0 auto 45px auto; }
+  .main-text a {
+    border-bottom: 1px dashed #333; }
+  .main-text .img {
+    width: 150px;
+    height: 150px;
+    background-image: url("../img/me.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    margin: 0 auto; }
+  .main-text h1 {
     font-weight: 600;
-    font-size: 73px;
-    text-align: center;
-    margin: 0;
-    flex-basis: 10%;
-    transition: 0.5s; }
-  .blog .main-text section > div {
-    flex-basis: 70%;
-    padding: 5px 20px;
-    text-align: right;
-    font-family: 'DroidArabicKufiRegular'; }
-    .blog .main-text section > div .author {
-      font-size: 12px;
-      color: #aaa; }
+    font-size: 50px;
+    margin: 5px 0; }
+  .main-text h3 {
+    font-weight: 400;
+    margin: 5px 0;
+    color: #777; }
+  .main-text h4 {
+    margin: 5px 0;
+    font-size: 18px; }
+  .main-text .spacer {
+    margin: 20px auto;
+    width: 80%;
+    height: 1px;
+    background-color: #ccc; }
+  .main-text section {
+    display: flex; }
+    @media (max-width: 768px) {
+      .main-text section {
+        flex-wrap: wrap; } }
+    .main-text section figure {
+      flex-basis: 20%; }
+      @media (max-width: 768px) {
+        .main-text section figure {
+          margin: 20px;
+          flex-basis: 100%; } }
+      .main-text section figure svg {
+        max-width: 100%;
+        height: auto; }
+        @media (max-width: 768px) {
+          .main-text section figure svg {
+            max-width: 30vw; } }
+        .main-text section figure svg path {
+          fill: #333; }
+    .main-text section > div {
+      flex-basis: 80%;
+      text-align: left; }
+      @media (max-width: 768px) {
+        .main-text section > div {
+          text-align: center;
+          margin: 0 auto; } }
+      .main-text section > div .skill-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr; }
+        .main-text section > div .skill-list p {
+          position: relative; }
+          @media (max-width: 768px) {
+            .main-text section > div .skill-list p {
+              padding-right: 35px;
+              padding-left: 5px;
+              text-align: left; } }
+          .main-text section > div .skill-list p .skill {
+            width: 50px;
+            height: 12px;
+            border-radius: 7.5px;
+            background-color: #ccc;
+            display: inline-block;
+            vertical-align: middle;
+            overflow: hidden;
+            position: absolute;
+            right: 15%;
+            top: 50%;
+            transform: translateY(-50%); }
+            @media (max-width: 768px) {
+              .main-text section > div .skill-list p .skill {
+                right: 2%;
+                width: 35px;
+                height: 12px;
+                border-radius: 6px; } }
+            .main-text section > div .skill-list p .skill span {
+              background: #333;
+              height: 100%;
+              display: inline-block;
+              vertical-align: top;
+              color: snow;
+              text-align: center;
+              font-size: 10px;
+              line-height: 12px; }
+      .main-text section > div li {
+        padding: 3px 0; }
+
+.blog .main-text {
+  direction: rtl; }
+  .blog .main-text section {
+    justify-content: center; }
+    .blog .main-text section figure {
+      font-family: fantasy;
+      font-weight: 600;
+      font-size: 73px;
+      text-align: center;
+      margin: 0;
+      flex-basis: 10%;
+      transition: 0.5s; }
+    .blog .main-text section > div {
+      flex-basis: 70%;
+      padding: 5px 20px;
+      text-align: right;
+      font-family: 'DroidArabicKufiRegular'; }
+      .blog .main-text section > div .author {
+        font-size: 12px;
+        color: #aaa; }
 
 body.blog-post h1 {
   font-size: 32px; }
