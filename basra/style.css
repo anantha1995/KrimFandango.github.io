@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+#container{
+    display: grid;
+    width:100vw;
+    height: 100vh;
+    grid-template-areas:
+    'start p2 score2'
+    'deck ground ground'
+    'deck p1 score1';
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
+    grid-gap: 10px;
+    max-width: 1000px;
+    margin:0 auto;
+}
+*{
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+}
+body{
+    font-size:24px;
+    margin: 0;
+    color:white;
+    background-color:#333;
+}
+#deck{
+    grid-area: deck;
+    flex-direction: column;   
+}
+#deck button{
+    position: absolute;
+    top: 10vh;
+    left:50%;
+    transform: translateX(-50%) scale(1);
+    background-color: #fff;
+    font-size: 18px;
+    padding: 8px 15px;
+    border:0;
+    border-radius: 3px;
+}
+#deck button:active{
+    transform:translateX(-50%)  scale(0.9);
+}
+#p1{
+    grid-area: p1;
+    position: relative;
+}
+#p2{
+    grid-area: p2;
+}
+#start{
+    grid-area: start;
+    border:0;
+    font-size: 4vh;
+    cursor: pointer;
+    background:linear-gradient(70deg,#44E853,#59AEE9);
+}
+#score1{
+    grid-area: score1;
+}
+#score2{
+    grid-area: score2;
+}
+#score1,#score2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ground{
+    grid-area: ground;
+    flex-wrap: wrap;
+}
+body > div{
+    background-color:#333;
+}
+#container > div{
+    background-color:#246232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+}
+img{
+    width: 15vh;
+    padding: 0 10px;
+    transition:0.3s;
+}
+#p1 img:hover{
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+.again{
+    cursor: pointer;
+    background:#fff;
+    padding: 10px 20px;
+    border: 0;
+    border-radius: 5px;
+}
+#ground img:hover{
+    transform: scale(1.1);
+}
+#overlay{
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,0.5);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    font-size:18px;
+}
+#gameover{
+    min-width: 300px;
+    min-height: 200px;
+    border-radius: 10px;
+    background: linear-gradient(70deg,#44E853,#59AEE9);
+    color: black;
+    text-align: center;
+    padding:10px;
+    font-size: 16px;
+}
+#ground img{
+    animation: newCard 0.2s linear 1 normal;
+    transform:scale(1);
+}
+@keyframes newCard{
+    from{
+        transform: scale(1.05);
+    }
+    to{
+        transform:scale(1);
+    }
+}
+
+
+@media(max-width:700px){
+    #container{
+        grid-template-areas:
+        'score1 start score2'
+        'p2 p2 p2'
+        'ground ground ground '
+        'p1 p1 p1';
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 2fr 1fr;
+        grid-gap: 5px;
+    }
+    #deck{
+        display: none !important;
+    }
+    img{
+        width: 12vh;
+        padding: 0 1vh;
+        transition:0.3s;
+    }
+}
+
+div[style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: pointer;line-height: 0;']{
+    display:none;
+}
