@@ -18,7 +18,7 @@ var overlay = document.getElementById('overlay');
 var gameover = document.getElementById('gameover');
 
 var backface = document.createElement('img');
-backface.src = "cards/facedown.png";
+backface.src = "cards/facedown.jpg";
 //start a game onload
 newGame();
 //start a game when the new game button is clicked
@@ -79,8 +79,8 @@ function newCard(number, type){
     if(number==13) number="queen";
     var card = {
         value: number,
-        img: `<img src="cards/${number}_of_${type}.png">`,
-        src: `cards/${number}_of_${type}.png`,
+        img: `<img src="cards/${number}_of_${type}.jpg">`,
+        src: `cards/${number}_of_${type}.jpg`,
         type: type,
         num: num
     }
@@ -243,9 +243,9 @@ function printGame(){
     });
     //Add backface cards with the same amount of cards in P2 array
     for(var x=0;x<p2.length;x++)
-    p2HTML.innerHTML +=`<img src="cards/facedown.png">`;
+    p2HTML.innerHTML +=`<img src="cards/facedown.jpg">`;
     //Add one backface in deck
-    deckHTML.innerHTML =`<div><img src="cards/facedown.png"></div><p>${deck.length} cards</p>`;
+    deckHTML.innerHTML =`<div><img src="cards/facedown.jpg"></div><p>${deck.length} cards</p>`;
     //print scores
     s1HTML.innerHTML= `You<br>${((bonus1[0]>8)? bonus1[0]/9: "0")}  Basra<br>score = ${(score1.length+bonus1[0])}`;
     s2HTML.innerHTML= `Computer<br>${((bonus2[0]>8)? bonus2[0]/9: "0")} Basra<br>score = ${(score2.length+bonus2[0])}`;
