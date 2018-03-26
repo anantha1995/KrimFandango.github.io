@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Selector - Random and Unique Colors</title>
+    <meta property="og:url"                content="http://itibook.com/color/" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Color Selector" />
+    <meta property="og:description"        content="Get a unique color for your next design." />
+    <meta property="og:image"              content="http://itibook.com/color/fb.jpg" />
+    <link href="https://fonts.googleapis.com/css?family=Supermercado+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <!--fb analytics-->
+    <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '178786322720913',
+        cookie     : true,
+        xfbml      : true,
+        version    : 'v2.11'
+      });
+        
+      FB.AppEvents.logPageView();  
+        
+    };
+  
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "https://connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+    <!--google analytics-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110924897-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-110924897-1');
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maker">Created by <a href="https://krimfandango.github.io/" target="_blank">Kareem Kamal</a></div>
+    <div id="list-wrap">
+        <div id="hover">
+            <img src="arrow.png" alt="">
+        </div>
+        <div id="list">
+            <div id="clear"><span>Clear List</span></div>
+        </div>
+    </div>
+    <div class="table">
+        <div class="cell">
+            <div class="container">
+                <div class="color">
+                    <div class="box random" onclick="bodyColor(0)" id="color1"></div>
+                    <div class="hexcode hex"id="text1"></div>
+                </div>
+                <div class="color">
+                    <div class="box random" onclick="bodyColor(1)" id="color2"></div>
+                    <div class="hexcode hex" id="text2"></div>
+                </div><div class="getColor">Get colors
+                    <div id="get" onclick="getColors(); onButtonClick()"></div>
+                    <div id="add"></div>
+                    <div id="saveText">Save Colors</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

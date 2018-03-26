@@ -1,0 +1,232 @@
+/*
+==============hide host logo==============
+*/
+body > :last-child {
+    display: none;
+}
+body > :nth-last-child(2) {
+    display: none;
+}
+/*
+==============main function rules==============
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    transition: 1s;
+    margin:0;
+    font-family: 'Open Sans', sans-serif;
+    background-color:#263238;
+}
+.table{
+    display: table;
+    width:100vw;
+    height: 100vh;
+    text-align: center;
+    transition:0.5s;
+}
+.cell{
+    display: table-cell;
+    vertical-align: middle;
+    transition:0.5s;
+}
+.container{
+    max-width: 700px;
+    font-size: 0;
+    margin: 0 auto;
+    transition:0.5s;
+}
+.color{
+    font-size:initial;
+    width: 50%;
+    display: inline-block;
+    transition:0.5s;
+}
+.box{
+    width:80%;
+    height: 300px;
+    transition: 0.5s;
+    border: 10px dashed white;
+    margin:0 auto;
+    cursor:pointer;
+}
+.getColor{
+    font-size: 32px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: 'Supermercado One', cursive;
+    color: rgba(255, 255, 255, 1);
+    display:inline-block;
+    padding: 8px 20px;
+    border-radius: 5px;
+    vertical-align: middle;
+    position: relative;
+    transition:0.5s;
+}
+#get{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+}
+.hexcode{
+    min-height:60px;
+    color:#CFD8DC;
+    padding: 10px 0;
+    transition:0.5s;
+}
+.maker{
+    position: absolute;
+    width: 100vw;
+    bottom:3px;
+    left: 0;
+    text-align: center;
+    font-size: 12px;
+    color:rgba(255, 255, 255, 0.5);
+    transition:0.5s;
+}
+a{
+    color: inherit;
+    text-decoration: inherit;
+    transition:0.5s;
+}
+.maker a{
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.5);
+    transition:0.5s;
+}
+/*
+==============new feature: save colors!==============
+*/
+.single{
+    height:60px;
+    line-height:60px;
+    font-size:0;
+    color:white;
+    vertical-align: middle;
+    overflow: hidden;
+    cursor: pointer;
+    transition:0.2s;
+}
+.single:hover{
+    background: #ddd;
+    transition:0.2s;
+}
+.side{
+    display:inline-block;
+    width: 50px;
+    height:50px;
+    border: 3px dashed #333;
+    vertical-align: middle;
+    margin:0 3px;
+}
+#list-wrap{
+    position:absolute;
+    top:0;
+    right: 0;
+    height:100vh;
+    font-size:0;
+}
+#hover{
+    display: inline-block;
+    height: 100vh;
+    line-height: 100vh;
+    vertical-align: middle;
+    cursor:pointer;
+    opacity:0.5;
+    transition:0.3s;
+}
+#hover:hover{
+    background: rgba(255, 255, 255, 0.1);
+    opacity:1;
+    transition:0.3s;
+}
+#list{
+    display:inline-block;
+    height: 100vh;
+    background:rgba(255, 255, 255, 0.1);
+    vertical-align: top;
+    width:0;
+    overflow-y: hidden;
+    transition: 0.3s;
+    overflow-y: scroll;
+    overflow-x:hidden;
+}
+.flip{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+#add{
+    height: 20px;
+    width: 20px;
+    border: 2px dashed rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    right: -30px;
+    position: absolute;
+    top: 17px;
+    transition:0.5s;
+    opacity:0;
+}
+#saveText{
+    opacity:0;
+    font-size:11px;
+    position: absolute;
+    top:18px;
+    right:-104px;
+    color:white;    
+    transition:0.5s;
+    font-family: 'Open Sans', sans-serif;
+    background-color:rgba(255, 255, 255, 0.3);
+    border-radius:5px;
+    padding:1px 4px;
+}
+#add:hover + #saveText{
+    opacity:1;
+    transition:0.5s;
+}
+#clear{
+    font-size:18px;
+    color:white;
+    text-align: center;
+    padding:20px 7px;
+    user-select: none;
+    cursor: pointer;
+    min-width: 112px;
+    font-family: 'Supermercado One', cursive;
+}
+#clear span{
+    background:rgba(255, 255, 255, 0.5);
+    padding:0 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition:0.3s;
+}
+#clear:hover span{
+    transition:0.3s;
+    background:rgba(255, 50, 50, 0.5);
+}
+
+/*
+==============scrollbar style==============
+*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
